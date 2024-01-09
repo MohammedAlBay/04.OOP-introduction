@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+include_once "Beverage.php";
+
 /* EXERCISE 2
 
 TODO: Make class beer that extends from Beverage.
