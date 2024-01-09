@@ -24,4 +24,5 @@ include_once "Beverage.php";
 
 $cola = new Beverage("black", 2);
 echo $cola->getInfo();
-echo "<p>Temperature: $cola->temperature</p>";
+echo "<br>";
+echo $cola->temperature;
