@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-include_once "Beverage.php";
-
 /* EXERCISE 2
 
 TODO: Make class beer that extends from Beverage.
@@ -21,29 +19,8 @@ Try to get this error on the screen= Fatal error: Uncaught Error: Call to undefi
 USE TYPEHINTING EVERYWHERE!
 */
 
-// Beer is inherited from Beverage through the keyword 'extends'
-class Beer extends Beverage
-{
-  // Properties
-  public string $name;
-  public float $alcoholPercentage;
-
-  // Construct function
-  public function __construct(string $color, float $price, string $temperature, string $name, float $alcoholPercentage) 
-  {
-    $this->color = $color;
-    $this->price = $price;
-    $this->temperature = $temperature;
-    $this->name = $name;
-    $this->alcoholPercentage = $alcoholPercentage;
-  }
-
-  // Make a get_AlcoholPercentage function to get the alcohol percentage
-  public function get_alcoholPercentage()
-  {
-    return $this->alcoholPercentage;
-  }
-}
+include_once "Beverage.php";
+include_once "Beer.php";
 
 // Instantiate a new object called "Duvel" with the use of the construct
 $Duvel = new Beer("blond", 3.5, "cold", "Duvel", 8.5);
