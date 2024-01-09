@@ -17,31 +17,8 @@ TODO: Print this method on the screen on a new line.
 USE TYPEHINTING EVERYWHERE!
 */
 
-include_once("../Exercice 2/Beverage.php");
-
-// Beer is inherited from Beverage through the keyword 'extends'
-class Beer extends Beverage
-{
-  // Properties
-  public string $name;
-  public float $alcoholPercentage;
-
-  // Construct function
-  public function __construct(string $color, float $price, string $temperature, string $name, float $alcoholPercentage) 
-  {
-    $this->color = $color;
-    $this->price = $price;
-    $this->temperature = $temperature;
-    $this->name = $name;
-    $this->alcoholPercentage = $alcoholPercentage;
-  }
-
-  // Make a get_AlcoholPercentage function to get the alcohol percentage
-  public function get_alcoholPercentage()
-  {
-    return $this->alcoholPercentage;
-  }
-}
+include_once "Beverage.php";
+include_once "Beer.php";
 
 // Instantiate a new object called "Duvel" with the use of the construct
 $Duvel = new Beer("blond", 3.5, "cold", "Duvel", 8.5);
