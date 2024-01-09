@@ -58,3 +58,7 @@ echo "<br>";
 echo "Color: " . $Duvel->color;
 echo "<br>";
 echo $Duvel->getInfo();
+echo "<br>";
+
+// Trying to call on an undefined method in Beverage class for $cola object resulting in error
+$cola->get_alcoholPercentage();
