@@ -22,6 +22,9 @@ USE TYPEHINTING EVERYWHERE!
 include_once "Beverage.php";
 include_once "Beer.php";
 
+// The $cola object from exerice 1
+$cola = new Beverage("black", 2);
+
 // Instantiate a new object called "Duvel" with the use of the construct
 $Duvel = new Beer("blond", 3.5, "cold", "Duvel", 8.5);
 
