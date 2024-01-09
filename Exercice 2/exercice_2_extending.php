@@ -47,3 +47,14 @@ class Beer extends Beverage
 
 // Instantiate a new object called "Duvel" with the use of the construct
 $Duvel = new Beer("blond", 3.5, "cold", "Duvel", 8.5);
+
+// One way of printing method
+echo "Alcohol percentage: " . $Duvel->get_alcoholPercentage() . "%";
+echo "<br>";
+// Alternative way of printing the method by assigning it to a new variable & echo said variable
+$alcoholAmount = $Duvel->get_alcoholPercentage();
+echo "Alcohol percentage: " . $alcoholAmount . "%";
+echo "<br>";
+echo "Color: " . $Duvel->color;
+echo "<br>";
+echo $Duvel->getInfo();
