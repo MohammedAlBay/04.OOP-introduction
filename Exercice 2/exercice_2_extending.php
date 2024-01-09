@@ -44,3 +44,6 @@ class Beer extends Beverage
     return $this->alcoholPercentage;
   }
 }
+
+// Instantiate a new object called "Duvel" with the use of the construct
+$Duvel = new Beer("blond", 3.5, "cold", "Duvel", 8.5);
