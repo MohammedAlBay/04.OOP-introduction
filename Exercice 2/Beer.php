@@ -16,7 +16,6 @@ class Beer extends Beverage
   {
     $this->color = $color;
     $this->price = $price;
-    $this->temperature = "cold";
     $this->name = $name;
     $this->alcoholPercentage = $alcoholPercentage;
   }
