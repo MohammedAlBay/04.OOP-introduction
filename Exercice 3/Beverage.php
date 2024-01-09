@@ -10,11 +10,11 @@ class Beverage
   private string $temperature;
 
   // Construct
-  public function __construct(string $color, float $price, string $defaultTemperature = "cold")
+  public function __construct(string $color, float $price)
   {
     $this->color = $color;
     $this->price = $price;
-    $this->temperature = $defaultTemperature;
+    $this->temperature = "cold";
   }
 
   // The function
