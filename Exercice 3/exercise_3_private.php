@@ -17,6 +17,8 @@ TODO: Print this method on the screen on a new line.
 USE TYPEHINTING EVERYWHERE!
 */
 
+include_once("../Exercice 2/Beverage.php");
+
 // Beer is inherited from Beverage through the keyword 'extends'
 class Beer extends Beverage
 {
