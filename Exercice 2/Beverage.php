@@ -21,3 +21,5 @@ class Beverage
     return "This beverage is $this->temperature, has a $this->color color and costs &euro;$this->price.";
   }
 }
+
+$cola = new Beverage("black", 2);
