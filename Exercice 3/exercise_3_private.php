@@ -21,7 +21,7 @@ include_once "Beverage.php";
 include_once "Beer.php";
 
 // Instantiate a new object called "Duvel" with the use of the construct
-$Duvel = new Beer("blond", 3.5, "cold", "Duvel", 8.5);
+$Duvel = new Beer("blond", 3.5, "Duvel", 8.5);
 
 // One way of printing method
 echo "Alcohol percentage: " . $Duvel->get_alcoholPercentage() . "%";
