@@ -20,30 +20,8 @@ TODO: Print the temperature on the screen.
 USE TYPEHINTING EVERYWHERE!
 */
 
-class Beverage
-{
-  // Properties
-  public string $color;
-  public float $price;
-  public string $temperature;
-
-  // Construct
-  public function __construct(string $color, float $price, $defaultTemperature = "cold")
-  {
-    $this->color = $color;
-    $this->price = $price;
-    $this->temperature = $defaultTemperature;
-  }
-
-  // The function
-  public function getInfo() 
-  {
-    return "This beverage is $this->temperature and $this->color and costs &euro;$this->price.";
-  }
-}
+include_once "Beverage.php";
 
 $cola = new Beverage("black", 2);
 echo $cola->getInfo();
 echo "<p>Temperature: $cola->temperature</p>";
-
-// require "view-exercice-1.php";
