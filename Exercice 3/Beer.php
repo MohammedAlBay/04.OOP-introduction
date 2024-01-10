@@ -27,9 +27,20 @@ class Beer extends Beverage
     return $this->name;
   }
 
-  // Getter metho to get the alcohol percentage property
+  // Getter method to get the alcohol percentage property
   public function get_AlcoholPercentage(): float
   {
     return $this->alcoholPercentage;
+  }
+
+  private function beerInfo()
+  {
+    return "Hi, I'm a $this->name, I have an alcohol percentage of $this->alcoholPercentage and a $this->color color.";
+  }
+
+  // Make public method to be able to access the private beerInfo() method
+  public function get_beerInfo()
+  {
+    return $this->beerInfo();
   }
 }
