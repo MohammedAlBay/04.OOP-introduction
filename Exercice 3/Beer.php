@@ -20,8 +20,15 @@ class Beer extends Beverage
     $this->alcoholPercentage = $alcoholPercentage;
   }
 
-  // Make a get_AlcoholPercentage function to get the alcohol percentage
-  public function get_alcoholPercentage()
+  // Methods
+  // Getter method for name property
+  public function get_Name(): string
+  {
+    return $this->name;
+  }
+
+  // Getter metho to get the alcohol percentage property
+  public function get_AlcoholPercentage(): float
   {
     return $this->alcoholPercentage;
   }
