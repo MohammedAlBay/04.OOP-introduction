@@ -35,7 +35,7 @@ class Beer extends Beverage
 
   private function beerInfo()
   {
-    return "Hi, I'm a $this->name, I have an alcohol percentage of $this->alcoholPercentage and a $this->color color.";
+    return "Hi, I'm a $this->name, I have an alcohol percentage of $this->alcoholPercentage and a " . $this->get_Color() . " color.";
   }
 
   // Make public method to be able to access the private beerInfo() method
