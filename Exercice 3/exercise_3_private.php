@@ -37,3 +37,5 @@ echo "<br>";
 
 $Duvel->set_Color("light");
 echo "New color of Duvel is: " . $Duvel->get_Color();
+echo "<br>";
+echo $Duvel->get_beerInfo();
