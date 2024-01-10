@@ -17,13 +17,13 @@ class Beverage
     $this->temperature = "cold";
   }
 
-  // The functions
-  // Getter for color property
+  // The Methods
+  // Getter method for color property
   public function get_Color(): string
   {
     return $this->color;
   }
-  // Setter for color property
+  // Setter method for color property
   public function set_Color(string $color)
   {
     $this->color = $color;
