@@ -24,13 +24,13 @@ include_once "Beer.php";
 $Duvel = new Beer("blond", 3.5, "Duvel", 8.5);
 
 // One way of printing method
-echo "Alcohol percentage: " . $Duvel->get_AlcoholPercentage() . "%";
+echo "Alcohol percentage of Duvel is: " . $Duvel->get_AlcoholPercentage() . "%";
 echo "<br>";
 // Alternative way of printing the method by assigning it to a new variable & echo said variable
 $alcoholAmount = $Duvel->get_AlcoholPercentage();
-echo "Alcohol percentage: " . $alcoholAmount . "%";
+echo "Alcohol percentage of Duvel is: " . $alcoholAmount . "%";
 echo "<br>";
-echo "Color: " . $Duvel->get_Color();
+echo "Color of Duvel is: " . $Duvel->get_Color();
 echo "<br>";
 echo $Duvel->getInfo();
 echo "<br>";
