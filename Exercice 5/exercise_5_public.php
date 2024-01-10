@@ -14,9 +14,9 @@ TODO: Change the price to 3.5 euro and print it also on the screen on a new line
 class Beverage
 {
   // Properties
-  public string $color;
-  public float $price;
-  public string $temperature;
+  private string $color;
+  private float $price;
+  private string $temperature;
 
   // Construct
   public function __construct(string $color, float $price)
