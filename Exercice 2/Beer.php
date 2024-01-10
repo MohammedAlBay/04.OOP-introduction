@@ -21,7 +21,7 @@ class Beer extends Beverage
   }
 
   // Make a get_AlcoholPercentage function to get the alcohol percentage
-  public function get_alcoholPercentage()
+  public function get_AlcoholPercentage()
   {
     return $this->alcoholPercentage;
   }
