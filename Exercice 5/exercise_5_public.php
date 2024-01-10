@@ -12,3 +12,8 @@ TODO: Change the price to 3.5 euro and print it also on the screen on a new line
 */
 
 include_once "Beverage.php";
+
+$cola = new Beverage("black", 2);
+echo $cola->getInfo();
+echo "<br>";
+echo $cola->temperature;
